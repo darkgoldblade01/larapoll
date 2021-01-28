@@ -3,7 +3,7 @@ namespace Inani\Larapoll;
 
 use Illuminate\Support\ServiceProvider;
 use Inani\Larapoll\Helpers\PollWriter;
-use Illuminate\Database\Eloquent\Factory;
+// use Illuminate\Database\Eloquent\Factory;
 
 class LarapollServiceProvider extends ServiceProvider
 {
@@ -67,7 +67,7 @@ class LarapollServiceProvider extends ServiceProvider
     public function registerFactories()
     {
         if (!app()->environment('production')) {
-            app(Factory::class)->load(__DIR__ . '/database/factories');
+//             app(Factory::class)->load(__DIR__ . '/database/factories');
         }
     }
 }
